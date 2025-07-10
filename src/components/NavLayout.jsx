@@ -2,7 +2,7 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import '../css/_Nav.scss';
-
+import Home from './Home';
 
 function NavLayout() {
   return (
@@ -14,7 +14,9 @@ function NavLayout() {
         <NavLink to="/navlayout/contact" className="nav-link">Contact</NavLink>
       </div>
     <main className='content-area'>
+    <Home/>
     <Outlet/>
+    
     </main>
     </div>
         
