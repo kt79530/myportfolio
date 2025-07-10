@@ -1,12 +1,8 @@
 import React from 'react'
 import { Outlet, useNavigate } from 'react-router-dom';
 
-
-
 import logo from './img/star.png';
 import './App.css';
-
-
 
 function App() {
   
@@ -28,14 +24,14 @@ function App() {
         <img src={logo} 
              className="App-logo"
              alt="logo" 
-             onClick={() => navigate('/home')}/>
+             onClick={() => navigate('/navlayout/home')}/>
         
         <p>
           Welcome to MY PORTFOLIO
         </p>
       </header>
     </div>
-   
+ <Outlet/>
 
     </>
   );
