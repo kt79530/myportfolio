@@ -1,40 +1,28 @@
-import React from 'react'
-import { Outlet, useNavigate } from 'react-router-dom';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import NavLayout from "./components/NavLayout";
+import Home from "./components/Home";
+import About from "./components/About";
+import Works from "./components/Works";
+import Contact from "./components/Contact";
 
-import logo from './img/star.png';
-import './App.css';
+import '../src/App.css';
 
-function App() {
-  
-  const navigate = useNavigate();
-      
-  /* 클릭하면 애니메이션등 변화를 줄때 사용하는 코드
-  const [isClicked, setIsClicked] = useState(false);
-  const navigate = useNavigate();
 
-  const handleClick = () =>{
-    setIsClicked(true); //클릭하면 애니메이션 시작
-    setTimeout(() => {
-      navigate('/home');},500)}; //애니메이션이 1초동안 동작 후 페이지로 이동*/
-
-  return (
+export default function App(){
+  return(
     <>
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} 
-             className="App-logo"
-             alt="logo" 
-             onClick={() => navigate('/navlayout/home')}/>
-        
-        <p>
-          Welcome to MY PORTFOLIO
-        </p>
-      </header>
+    <div className="app-container">
+      <NavLayout />
     </div>
- <Outlet/>
-
+      <main className="content">
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/works" element={<Works />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
     </>
-  );
+  )
 }
-
-export default App;

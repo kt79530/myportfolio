@@ -1,7 +1,7 @@
 import { Container, Row, Col, ProgressBar } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
-//import '../css/Portfolio.scss';
+import '../css/_Works.scss';
 
 const Works = () =>{
     
@@ -32,7 +32,6 @@ const Works = () =>{
                             muted
                             loop
                             width="100%"
-                            //</div>height="100%"
                             >
                         </video>
                         <Button

@@ -1,6 +1,6 @@
 import { Accordion,Container, Row, Col } from "react-bootstrap";
 import '../css/_About.scss';
-
+import NavLayout from "./NavLayout";
 
 const About = () =>{
     return(
