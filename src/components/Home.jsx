@@ -33,3 +33,15 @@ function Home () {
     );
 }
 export default Home;
+
+
+/*<LetterByLetter
+            text="Life is about courage and going into the unknown"
+            className="topic-en"
+            delay={50}
+          />
+          <LetterByLetter
+            text='"인생이란 용기를 내서 미지의 세계로 나아가는 것이다"'
+            className="topic"
+            delay={80}
+          />*/
