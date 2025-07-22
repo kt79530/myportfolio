@@ -1,21 +1,27 @@
+import React, {useEffect} from 'react';
 import { Accordion,Container, Row, Col } from "react-bootstrap";
 import '../css/_About.scss';
 import NavLayout from "./NavLayout";
+import AOS from "aos"
+import 'aos/dist/aos.css';
 
-const About = () =>{
+function About() {
+
+    useEffect(()=>{
+        AOS.init({
+            duration:500,
+            once:true,
+        });
+    }, []);
     return(
         <>
         <Container  >
             <Row className="about-align">
-                <Col lg={12} md={12} sm={12}>        
-                       <div className="title">
-                            <p className="text">About Me</p>
-                            <p className="line-up" data-aos='zoom-in'></p>
-                            <p className="line-down" data-aos='zoom-in'></p>
-                    </div>
-                </Col>
-                
-                <Col lg={3} md={6} sm={12}>
+               <Col lg={10} md={12} sm={12} data-aos="fade-up">
+                <div className="title">About Me</div>
+               </Col> 
+                       
+                <Col lg={3} md={6} sm={12} data-aos="fade-up">
                 <Accordion defaultActiveKey='0' >
                     <Accordion.Item eventKey="0" className="mb">
                         <Accordion.Header className="">
@@ -27,7 +33,7 @@ const About = () =>{
                     </Accordion.Item>
                     </Accordion>
                 </Col>
-                <Col lg={3} md={6} sm={12} >
+                <Col lg={3} md={6} sm={12} data-aos="fade-down">
                 <Accordion defaultActiveKey='0'>
                     <Accordion.Item eventKey="1" className="mb">
                         <Accordion.Header>
@@ -40,7 +46,7 @@ const About = () =>{
                 </Accordion>
                 </Col>
 
-                <Col lg={3} md={6} sm={12} >
+                <Col lg={3} md={6} sm={12} data-aos="fade-up" >
                 <Accordion defaultActiveKey='0' >
                     <Accordion.Item eventKey="1" className="mb">
                         <Accordion.Header>
@@ -53,7 +59,7 @@ const About = () =>{
                 </Accordion>
                 </Col>
 
-                <Col lg={3} md={6} sm={12} >
+                <Col lg={3} md={6} sm={12} data-aos="fade-down">
                 <Accordion defaultActiveKey='0'>
                     <Accordion.Item eventKey="1" className="mb">
                         <Accordion.Header>
@@ -64,6 +70,18 @@ const About = () =>{
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
+                </Col>
+
+                <Col lg={12}>
+                <h1><strong>Skill</strong></h1>
+                <div className='skill-icon'>
+                    <img src='/img/vscodeicon.png'/>
+                    <img src='/img/HTML5_logo.png'/>
+                    <img src='/img/React-icon.png'/>
+                    <img src='/img/Vue.png'/>
+                    <img src='/img/Bootstrap_logo.png'/>
+                    <img src='/img/figmalogo.png'/>
+                </div>
                 </Col>
             </Row>
         </Container>

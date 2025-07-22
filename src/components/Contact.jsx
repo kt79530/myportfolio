@@ -1,35 +1,41 @@
 import { Container, Row, Col } from "react-bootstrap";
-//import '../css/Contact.scss';
+import { useEffect } from "react";
+import '../css/_Contact.scss';
+import '../css/Font.scss';
 
 const Contact = () =>{
+
+//body background-color 지정
+    useEffect(() => {
+  document.body.style.backgroundColor = "#000263"
+
+  return () => {
+    document.body.style.backgroundColor = "";
+  };
+}, []);
+
+//본문
     return(
     <>
         <Container >
-            <Row className=" d-flex justify-content-center align-items-center">
-                <Col lg={12} md={12} sm={12} 
-                     className="">
-                      <div className="title1" data-aos='fade-left'>
-                            <p className="text">Contact Me</p>
-                            <p className="line-up" data-aos='zoom-in'></p>
-                            <p className="line-down" data-aos='zoom-in'></p>
-                        </div>
+            <Row className="wrap">
+                <Col lg={8} md={12} sm={12} className="title-box" >
+                    <div className="text-bg">
+                    <p className="f-t">Contact Me</p>    
+                    <span className="f-st">
+                        “To see the world, things dangerous to come to,<br/>
+                        to see behind walls, draw closer, to find each other, and to feel.<br/>
+                        That is the purpose of life.”
+                    </span>
+                    </div>
                 </Col>
-                    <Col lg={12} md={12} sm={12} 
-                     className="d-flex justify-content-center align-items-center " >    
-                    <div className="infor-wrap" data-aos='fade-up'>
-                        <div className="infor-mail">
-                            <img src="/image/mail-icon.png"/>
-                            <strong> kiteaman@naver.com</strong>
-                        </div>
-                        <div className="infor-phone">
-                            <img src="/image/phone-icon.png"/>
-                            <strong>  010. 1234. 5678</strong>
-                        </div>
-                        <div className="infor-web">
-                            <img src="/image/web-icon.png"/>
-                            <strong> github.com/sag/sfgw</strong>
-                        </div>
-                    </div>{/*infor-wrap*/}
+                <Col lg={4} md={12} sm={12} className="adr d-flex justify-content-center align-items-center" >    
+                    <div className="infor-box" >
+                       <h3 className="line-height"><strong> kiteaman@naver.com</strong></h3>
+                       <h3 className="line-height"><strong>  010. 1234. 5678</strong></h3>
+                       <h3 className="line-height"><strong> github.com/sag/sfgw</strong></h3>
+                    </div>
+                    
                 </Col>            
             </Row>
         </Container>

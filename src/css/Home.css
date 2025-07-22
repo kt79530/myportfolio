@@ -1,35 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
-
-.App {
-  height: 100vh;
-}
-
-.content {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.section-text {
-  font-size: 2rem;
-  color: #333;
+.topic {
+  color:white;
+  font-size: clamp(16px,2.7vw,48px);
+  font-weight: 700;
   text-align: center;
+  
 }
 
-.content.visible {
-  opacity: 1;
-  transform: translateY(0);
+.topic-en{
+  font-size:clamp(16px,2.7vw,48px);
+  font-weight: 800;
+  text-align: center;
+  line-height: 10vh;
 }

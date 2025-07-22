@@ -1,14 +1,23 @@
 .vertical-nav{
-    width: 250px;
+    width: 60px;
     height: 100vh;
-    background-color: rgb(77, 77, 77);
+    opacity: 0.2;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
-    transition:all 1s ease
+    transition:all 1s ease;
+    z-index:100;
+
+    &:hover{
+        width: 200px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
 }
 
 .nav-link{
@@ -16,8 +25,24 @@
     font-weight: 800;
     font-size: 1.5rem;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(119, 119, 119);
     padding-bottom: 5vh;
-
+    width: 100%;
+    text-align: center;
+    opacity: 0.1;
+    transition: all 1s ease;
+    &:hover{
+        opacity: 1;
+    }
 }
 
+.navlayout-container {
+  display: flex;
+  
+  overflow: hidden;
+}
+ .content-area{
+    flex-grow: 0;
+    padding: 20px;
+    margin-left: 60px;
+ }

@@ -1,0 +1,28 @@
+
+.wrap{
+    width: 100%; height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-bg{
+    width: 1000px; 
+    height: 500px; 
+    background-color: #00E078;
+    border-radius: 50px 50px 50px 35%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1vw;
+}
+.adr{
+    width: 500px; height: 300px; 
+    background-color: #6B6B6B;
+    opacity: 60%;
+    border-radius: 50px 20px 150px 20px;
+    margin-top: 21vh;
+    margin-left: -15vw;
+}
+
+.line-height{
+    padding: 1vw;
+}
