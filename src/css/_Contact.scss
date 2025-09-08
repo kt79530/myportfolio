@@ -1,0 +1,211 @@
+<<<<<<< HEAD
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:calc(100vh - 50px);
+  padding: 1rem;
+  
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 2.5rem;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.contact-card h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #2d2d2d;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* 폼 공통 스타일 */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form .form-group {
+  position: relative;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 2px solid #d1d5db;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6366f1;
+}
+
+.contact-form label {
+  position: absolute;
+  left: 0;
+  top: -1rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+  transition: all 0.3s ease;
+}
+
+/* placeholder 효과를 CSS로만 주고 싶을 경우 */
+.contact-form input:placeholder-shown + label,
+.contact-form textarea:placeholder-shown + label {
+  top: 0.5rem;
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+/* 버튼 */
+.contact-form button {
+  width: 100%;
+  padding: 1rem;
+  background: #6366f1;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #7d7d7d;
+  box-shadow: 0 8px 20px rgba(82, 82, 82, 0.5);
+}
+
+/* 애니메이션 */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+=======
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height:calc(100vh - 50px);
+  padding: 1rem;
+  
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 2.5rem;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.contact-card h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #2d2d2d;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* 폼 공통 스타일 */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form .form-group {
+  position: relative;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 2px solid #d1d5db;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6366f1;
+}
+
+.contact-form label {
+  position: absolute;
+  left: 0;
+  top: -1rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+  transition: all 0.3s ease;
+}
+
+/* placeholder 효과를 CSS로만 주고 싶을 경우 */
+.contact-form input:placeholder-shown + label,
+.contact-form textarea:placeholder-shown + label {
+  top: 0.5rem;
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+/* 버튼 */
+.contact-form button {
+  width: 100%;
+  padding: 1rem;
+  background: #6366f1;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #7d7d7d;
+  box-shadow: 0 8px 20px rgba(82, 82, 82, 0.5);
+}
+
+/* 애니메이션 */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+>>>>>>> cf6b372028391d8d2075873f9280ff29f1d7d9c1

@@ -1,0 +1,168 @@
+<<<<<<< HEAD
+
+//item align 수직 중앙정렬
+.about-align{
+    min-height: 100vh !important;
+    
+}
+
+.about-section{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.line-height{
+    line-height: 30px;
+}
+.title-wrap{
+  margin: 0 auto;
+}
+.char-wrapper {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.char-nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* h5를 가로 네비처럼 */
+.menu-item {
+  margin: 0 2rem;
+  cursor: pointer;
+  position: relative;
+  font-weight: 700;
+
+  &:hover{
+    color: red;
+    font-size: larger;
+  }
+}
+
+
+/* 설명(h6)은 처음엔 숨김 */
+
+ .desc {
+  margin-top: 1.5vh;
+  position: absolute;
+  top: 100%;  
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(34, 34, 34, 0.9);
+  padding: 5px 10px; /* 패딩 추가 (선택 사항) */
+  border-radius: 5px; /* 모서리 둥글게 (선택 사항) */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 그림자 효과 (선택 사항) */
+}
+
+/* 메뉴 hover 시 해당 설명만 표시 */
+.char-wrapper .menu:hover .desc {
+  opacity: 1;
+}
+
+.skill-wrap{
+  margin: 0 auto;
+  margin-top: 15vh;
+  text-align: center;
+}
+
+img{
+  width: 160px;
+  height: 160px;
+  box-sizing: content-box;
+=======
+
+//item align 수직 중앙정렬
+.about-align{
+    min-height: 100vh !important;
+    
+}
+
+.about-section{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.line-height{
+    line-height: 30px;
+}
+.title-wrap{
+  margin: 0 auto;
+}
+.char-wrapper {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.char-nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* h5를 가로 네비처럼 */
+.menu-item {
+  margin: 0 2rem;
+  cursor: pointer;
+  position: relative;
+  font-weight: 700;
+
+  &:hover{
+    color: red;
+    font-size: larger;
+  }
+}
+
+
+/* 설명(h6)은 처음엔 숨김 */
+
+ .desc {
+  margin-top: 1.5vh;
+  position: absolute;
+  top: 100%;  
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(34, 34, 34, 0.9);
+  padding: 5px 10px; /* 패딩 추가 (선택 사항) */
+  border-radius: 5px; /* 모서리 둥글게 (선택 사항) */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 그림자 효과 (선택 사항) */
+}
+
+/* 메뉴 hover 시 해당 설명만 표시 */
+.char-wrapper .menu:hover .desc {
+  opacity: 1;
+}
+
+.skill-wrap{
+  margin: 0 auto;
+  margin-top: 15vh;
+  text-align: center;
+}
+
+img{
+  width: 160px;
+  height: 160px;
+  box-sizing: content-box;
+>>>>>>> cf6b372028391d8d2075873f9280ff29f1d7d9c1
+}
