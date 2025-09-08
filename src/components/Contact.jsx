@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from "react";
 import { motion } from "framer-motion";
 import {Container, Row, Col} from "react-bootstrap";
@@ -86,7 +86,7 @@ const Contact = () => {
   );
 };
 
-=======
+
 import React from "react";
 import { motion } from "framer-motion";
 import {Container, Row, Col} from "react-bootstrap";
@@ -174,5 +174,4 @@ const Contact = () => {
   );
 };
 
->>>>>>> cf6b372028391d8d2075873f9280ff29f1d7d9c1
 export default Contact;
