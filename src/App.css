@@ -13,5 +13,5 @@ body{ background: radial-gradient(circle, #ffffff, #a7a7a7);}
   font-family: 'Pretendard', sans-serif;
 }
 
-body{ background: radial-gradient(circle, #ffffff, #a7a7a7);}
+body{ background: radial-gradient(circle, #ffffff, #a7a7a7); overflow-x: hidden;}
 

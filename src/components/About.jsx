@@ -7,17 +7,17 @@ import '../css/_About.scss';
 export default function About() {
 
     const images = [
-      '../img/vue-logo.png',
-      '../img/vuetify-logo.png',
-      '../img/react-logo.png',
-      '../img/html-logo.png',
-      '../img/bootstrap-logo.png',
-      '../img/js-logo.png',
-      '../img/scss-logo.png',
-      '../img/ts-logo.png',
-      '../img/ae-logo.png',
-      '../img/premiere-logo.png',
-      '../img/figma-logo.png',
+      `${process.env.PUBLIC_URL}/img/react-logo.png`,
+      `${process.env.PUBLIC_URL}/img/vue-logo.png`,
+      `${process.env.PUBLIC_URL}/img/vuetify-logo.png`,
+      `${process.env.PUBLIC_URL}/img/html-logo.png`,
+      `${process.env.PUBLIC_URL}/img/ts-logo.png`,
+      `${process.env.PUBLIC_URL}/img/js-logo.png`,
+      `${process.env.PUBLIC_URL}/img/bootstrap-logo.png`,
+      `${process.env.PUBLIC_URL}/img/scss-logo.png`,
+      `${process.env.PUBLIC_URL}/img/figma-logo.png`,
+      `${process.env.PUBLIC_URL}/img/ae-logo.png`,
+      `${process.env.PUBLIC_URL}/img/premiere-logo.png`,
     ];
   
   return (
@@ -44,7 +44,7 @@ export default function About() {
             {/* 프로필 이미지 */}
            <Col lg={2} md={6}>
               <motion.img
-                  src="../img/me.jpg"
+                  src={`${process.env.PUBLIC_URL}/img/me.jpg`}
                   alt="Profile"
                   className="img-fluid rounded "
                   whileHover={{ scale: 1.05 }}
@@ -58,7 +58,7 @@ export default function About() {
                   <h5 className="py-3 line-height">
                     사람들과의 소통을 중요하게 생각하는 
                     프론트엔드 개발자 지망생입니다.<br/>React와 Vutify 기술을 활용해 
-                    따뜻하고 직관적인 경험을 만드는 것을 좋아합니다.
+                    따뜻하고 직관적인 경험을 만드는 것을 추구합니다.
                   </h5>
                   
                   {/* SNS 버튼 */}
@@ -116,20 +116,28 @@ export default function About() {
             <Col lg={9} md={6} >
               <div className="skill-wrap">
                 <h3><strong className="text-align ">Skill</strong></h3>
-                  <div className="skill-mark mt-3">
-                    {images.map((src, index) => (
-                      <motion.img 
-                        key={index}
-                        src={src}
-                        alt={`img-${index}`}
-                        initial={{ opacity: 0, x: 100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1 }} />
-                      ))}
+                  <div className="sliger-container mt-3">
+                    <motion.div 
+                        className="slider"
+                        animate={{x:["0%", "-50%"]}}
+                        transition={{ 
+                          duration: 20, 
+                          repeat:Infinity,
+                          ease:"linear"
+                        }}>
+                          {[...images, ...images, ...images].map((src, i) => (
+                            <img 
+                              src={src}
+                              alt={`logo-${1}`}
+                              key={i} 
+                              className="slider-img"/>
+                          ))}
+                      </motion.div>
+                    
                   </div>
               </div>
             </Col>
-            
+        
 
             
           </Row>

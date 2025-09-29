@@ -1,11 +1,13 @@
 
 .navlayout-container {
-  width: 100%;
+  width: 30%;
   height: 3vh;
   padding: 2rem;
   display: flex;
-  flex-direction: column; 
-     
+  flex-direction: column;
+  background: rgba(175, 175, 175, 0.2); 
+  border-radius: 0 0 80px 80px;
+  margin: 0 auto;     
 }   
 
 /* 가로 네비게이션 */
@@ -51,6 +53,7 @@
       bottom: -4px;
       left: 0;
     }
+
   }
   &:hover{opacity: 1;}
 }
@@ -60,4 +63,6 @@
   width: 100%;
 
 }
+
+
 

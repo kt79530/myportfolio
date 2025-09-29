@@ -16,9 +16,9 @@ export default function App(){
        {/*navigation */}
       <div className="app-container">
         <NavLayout />
-      </div>    
+      </div> 
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/" element={<Navigate to="/home" />}/>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/works" element={<Works />} />

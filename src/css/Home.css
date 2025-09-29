@@ -21,7 +21,7 @@
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #b7b6b6;
+  color: #81a2f4;
 }
 
 .home__subtitle {
@@ -47,16 +47,18 @@
 }
 
 .btn.primary:hover {
-  background-color: #005fa3;
+  background-color: #018bed;
+  color: #dddddd;
 }
 
 .btn.secondary {
-  background-color: #e6e4e4;
+  background-color: #dddddd;
   color: #333;
 }
 
 .btn.secondary:hover {
-  background-color: #e0e0e0;
+  background-color: #fafafa;
+  color: #555;
 }
 
 /*.scroll-indicator {
