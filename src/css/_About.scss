@@ -1,11 +1,13 @@
 
 //item align 수직 중앙정렬
-.about-align{
-    min-height: 100vh !important;
-    
-}
+
+/*.about-align{
+    min-height: 100% !important;
+  }*/
 
 .about-section{
+  width: 100%;
+  height: auto;
     margin-top: 0px;
     display: flex;
     flex-direction: column;
@@ -20,17 +22,17 @@
 .title-wrap{
   margin: 0 auto;
 }
-.char-wrapper {
-  position: relative;
-  text-align: center;
-  margin: 0 auto;
+.img-fluid{ //프로필 사진
+  width: 100%;
+  max-width: 200px;
+  @media(max-width:768px){
+    width: 150px;  
+  }
 }
 
-.char-nav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+.h2{font-weight: 600;}//이름 
+
+
 
 /* h5를 가로 네비처럼 */
 .menu-item {
@@ -43,13 +45,36 @@
     color: red;
     font-size: larger;
   }
+  @media (max-width:768px){
+    font-size: 14px;
+    font-weight: 800;
+    &:hover{
+      color: red; font-size: 14px;
+    }
+  }
 }
 
 
 /* 설명(h6)은 처음엔 숨김 */
+.char-wrapper {
+  text-align: center;  
+  position: relative;
+}
 
+.char-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.menu{
+  margin-left: 30px;
+  @media (max-width:768px){
+    margin-left: 0;
+  }
  .desc {
-  margin-top: 1.5vh;
+  margin-top: 40px;
   position: absolute;
   top: 100%;  
   left: 50%;
@@ -57,12 +82,18 @@
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
   white-space: nowrap;
-  font-size: 1.5rem;
+  font-size: 20px;
   color: white;
   background-color: rgba(34, 34, 34, 0.9);
-  padding: 5px 10px; /* 패딩 추가 (선택 사항) */
+  padding: 10px 20px; /* 패딩 추가 (선택 사항) */
   border-radius: 5px; /* 모서리 둥글게 (선택 사항) */
   box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 그림자 효과 (선택 사항) */
+  @media (max-width:768px){
+    width: 320px;
+    font-size: 15px;
+    white-space:normal ;
+  }
+}
 }
 
 /* 메뉴 hover 시 해당 설명만 표시 */
@@ -72,7 +103,7 @@
 
 .skill-wrap{
   margin: 0 auto;
-  margin-top: 15vh;
+  margin-top: 150px;
   text-align: center;
 
   .skill-mark{
@@ -86,6 +117,12 @@ img{
   width: 130px;
   height: 130px;
   box-sizing: content-box;
+  overflow: hidden;
+  @media(max-width:768px){
+    width: 100px;
+    height: 100px;
+    
+  }
 }
 
 .slider-container {
@@ -100,9 +137,12 @@ img{
   width: fit-content;
 }
 
-.slide-image {
+/*.slide-image {
   width: 50px;
   height: auto;
   margin-right: 20px;  // 이미지 사이 간격
   flex-shrink: 0;
-}
+}*/
+
+
+  

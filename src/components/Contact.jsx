@@ -8,9 +8,9 @@ import '../css/_Contact.scss';
 
 const Contact = () => {
   return (
-    <Container
+    <Container 
      className="d-flex justify-content-center align-items-center">
-        <Col lg={9} md={6} sm={12}>
+        <Col lg={9} md={8} sm={12}>
             <section className="contact-section">
                 <motion.div
                     className="contact-card"

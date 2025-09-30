@@ -24,7 +24,7 @@ export default function About() {
     <section className="about-section py-5" id="about">
       <Container>
         {/* 제목 */}
-        <Col lg={9} md={6} className="title-wrap">
+        <Col lg={9} md={6} sm={12} className="title-wrap">
           <motion.h1
             className="mb-5 title"
             initial={{ opacity: 0, y: -20 }}
@@ -42,17 +42,17 @@ export default function About() {
         >
           <Row className="d-flex justify-content-center align-items-center">
             {/* 프로필 이미지 */}
-           <Col lg={2} md={6}>
+           <Col lg={4} md={12} sm={12} className="d-flex align-items-center justify-content-center">
               <motion.img
                   src={`${process.env.PUBLIC_URL}/img/me.jpg`}
                   alt="Profile"
                   className="img-fluid rounded "
-                  whileHover={{ scale: 1.05 }}
+                  whileHover={{ scale: 1 }}
                 />
             </Col>
 
             {/* 자기소개 카드 */}
-            <Col lg={7} md={6}>
+            <Col lg={7} md={12} sm={12}  className="">
               <div className="intro-wrapper ">
                 <h2 className="h2">KIM KITAE</h2>
                   <h5 className="py-3 line-height">
@@ -88,9 +88,11 @@ export default function About() {
               </div>
             </Col>
               
-            <Col lg={9} md={6} className="char-wrapper py-3">
+            <Col lg={9} md={12} sm={12} 
+                className="char-wrapper py-3">
               <hr />
-              <h3 className="mt-5 mb-5"><strong>Character</strong></h3>
+              <div className="mt-5 mb-5">
+                <h3><strong>Character</strong></h3></div>
               <div className="char-nav">
                 <div className="menu ">
                   <h5 className="menu-item">Responsibility</h5>
@@ -113,7 +115,7 @@ export default function About() {
                 </div>
               </div>
             </Col>
-            <Col lg={9} md={6} >
+            <Col lg={9} md={12} sm={12} >
               <div className="skill-wrap">
                 <h3><strong className="text-align ">Skill</strong></h3>
                   <div className="sliger-container mt-3">

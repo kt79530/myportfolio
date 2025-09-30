@@ -15,7 +15,7 @@ const Works = () =>{
     <>
         <Container >
             <Row className="works-wrapper d-flex justify-content-center align-items-center">
-                <Col lg={9} md={6} sm={12}>
+                <Col lg={9} md={9} sm={10}>
                 <motion.div
                     className="title-wrap mt-5"
                     initial={{ opacity: 0, y: -20 }}   // 시작 상태
@@ -27,7 +27,7 @@ const Works = () =>{
                 </motion.div>
                 </Col>
 
-                <Col lg={9} md={6} sm={12}>
+                <Col lg={9} md={9} sm={10}>
                     <motion.article
                         className="content mt-3" 
                         initial={{ opacity: 0, y: 50 }}   
@@ -60,7 +60,7 @@ const Works = () =>{
                     </motion.article>
                 </Col>
 
-                <Col lg={9} md={6} sm={12} className="mt-5">
+                <Col lg={9} md={9} sm={10} className="mt-3">
                     <motion.article
                         className="content mt-3" 
                         initial={{ opacity: 0, y: 50 }}   
