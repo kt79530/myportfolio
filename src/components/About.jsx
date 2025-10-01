@@ -71,14 +71,7 @@ export default function About() {
                       GitHub
                     </Button>
                     <Button
-                      variant="outline-info"
-                      href="https://linkedin.com/in/yourname"
-                      target="_blank"
-                    >
-                      LinkedIn
-                    </Button>
-                    <Button
-                      variant="outline-secondary"
+                      variant="outline-danger"
                       href="mailto:youremail@gmail.com"
                     >
                       Email

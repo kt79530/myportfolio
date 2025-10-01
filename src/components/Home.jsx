@@ -1,5 +1,6 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
+import { Link } from "react-router-dom";
 // components/Home.jsx
 import '../css/Home.css';
 
@@ -13,8 +14,8 @@ function Home() {
             <p className="home__subtitle">Pixel-perfect, accessible, and responsive web interfaces.</p>
 
             <div className="home__buttons">
-              <a href="/Works" className="btn primary">View My Work</a>
-              <a href="/About" className="btn secondary">About Me</a>
+              <Link to="/Works" className="btn primary">View My Work</Link>
+              <Link to="/About" className="btn secondary">About Me</Link>
             </div>
           </div>
        </Col>

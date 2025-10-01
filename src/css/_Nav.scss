@@ -5,9 +5,11 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  background: rgba(175, 175, 175, 0.3); 
   border-radius: 0 0 80px 80px;
   margin: 0 auto;  
+  background: rgba(211, 211, 211, 0.6);
+  transition: all 1s;
+   
   @media (max-width:600px){
     width: 300px;
   }   

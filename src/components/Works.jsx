@@ -78,7 +78,7 @@ const Works = () =>{
                                 </video>
                                     <Button
                                         className="button" 
-                                        onClick={() => window.open("https://monggea.github.io/namooActors", "_blank")}>
+                                        onClick={() => window.open("http://kt79530.github.io/animalshelter", "_blank")}>
                                     Go to the Site
                                     </Button>
                         </div> 
