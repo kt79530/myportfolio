@@ -72,7 +72,7 @@ export default function About() {
                     </Button>
                     <Button
                       variant="outline-danger"
-                      href="mailto:youremail@gmail.com"
+                      href="mailto:kiteaman82@gmail.com"
                     >
                       Email
                     </Button>
